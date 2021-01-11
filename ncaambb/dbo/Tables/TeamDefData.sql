@@ -16,6 +16,8 @@
     [TURN]     FLOAT (53) NULL,
     [BLK]      FLOAT (53) NULL,
     [YR]       INT        NULL,
+    [CreateDTS] DATETIME NULL,
+    [UpdateDTS] DATETIME NULL
     PRIMARY KEY CLUSTERED ([DefId] ASC),
     CONSTRAINT [FK_TeamDefData_ToTable] FOREIGN KEY ([TeamId]) REFERENCES [dbo].[Teams] ([TeamId])
 );
